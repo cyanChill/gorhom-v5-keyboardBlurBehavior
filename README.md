@@ -1,4 +1,9 @@
-# [v5-alpha.10] Incorrect `keyboardBlurBehavior="restore"` Behavior
+> [!IMPORTANT]  
+> **The bug turns out to be related to the keyboard input mode set to resize** (ie: `android_keyboardInputMode="adjustResize"`).
+>
+> This bug has been fixed in `5.0.0-alpha.11`.
+
+# [v5-alpha.10] ~~Incorrect `keyboardBlurBehavior="restore"` Behavior~~
 
 When you have `keyboardBlurBehavior="restore"` on the `<BottomSheet />`, you would expect the sheet to restore its position after the keyboard collapses (ie: sheet shifts back down), however, the sheet remains in place in `@gorhom/bottom-sheet@5.0.0-alpha.10` (expected behavior in `@gorhom/bottom-sheet@5.0.0-alpha.9`).
 
